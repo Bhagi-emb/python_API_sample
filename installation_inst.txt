@@ -1,0 +1,27 @@
+#FOR ANY PROJECT WHICH WE ARE DEALING GEN AI(CHATGPT,OPENAI,..) 
+#These are basic step need to follow 
+ Documentation:
+
+  1) Problem Statement:
+  2) Key insights:
+  3) User Persona:
+  4) MVP (Basic features):
+  5) PRD:
+For Travel agency API:
+1)Key Insights:
+  Users want convenience: They prefer a single platform that offers end-to-end travel services, including flights, hotels, local transportation, and activities.
+  Price sensitivity: Many users compare costs across multiple platforms and expect competitive pricing.
+2) Problem Statement:
+  based on budget 1) national 2)international
+  we can provide the destinations
+3) User Personal: 
+  Budget Travelers: Young adventurers and backpackers looking for the best deals.
+  Family Travelers: Parents planning vacations with kids and requiring detailed itineraries.
+4) MVP (Basic Features):
+  Flight & Hotel Booking – Compare and book flights, hotels, and vacation rentals.
+  Itinerary Builder – Customizable travel plans with day-wise activities.
+  Cost Estimator – Price comparison tool for flights, accommodations, and experiences.
+  24/7 Customer Support – Live chat and emergency assistance.
+  User Reviews & Ratings – Verified traveler feedback on hotels, airlines, and attractions.
+  Secure Payment Gateway – Multiple payment options with currency conversion.
+  Local Transport & Activities – Car rentals, guided tours, and local experiences.
