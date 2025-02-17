@@ -131,7 +131,5 @@ if __name__ == "__main__":
     sys.exit(app.exec_())
 
 #command prompt i/p:
-#export OPENAI_API_KEY=
-#"sk-svcacct-og7zRnK94lhckFXM2tOCR_aoKGsUaXGqxW7tSoSgkUlL4gih3IUDC0yPNQHuYPbT3BlbkFJfR4i91plv_jGOAR8d84H
-#_fMImOyVz7TZ7KSz9q6lWPETTCZK1yjiZBdAh1Y9X1wA"
+#export OPENAI_API_KEY=" provide key"
 #python sample.py
