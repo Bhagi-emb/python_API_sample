@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QComboBox, QLineEdit, QPushButton, QVBoxLayout, QMessageBox
+from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QComboBox, QLineEdit, QPushButton, QVBoxLayout, QMessageBox, QSpinBox
 import requests
 import os
 
@@ -30,6 +30,12 @@ class TourTravellerApp(QWidget):
         self.itinerary_options = QComboBox()
         self.itinerary_options.addItem("None")
         layout.addWidget(self.itinerary_options)
+
+        # Number of Days
+        layout.addWidget(QLabel("Number of Days:"))
+        self.days_spinbox = QSpinBox()
+        self.days_spinbox.setRange(1, 30)
+        layout.addWidget(self.days_spinbox)
 
         # Cost Estimator
         layout.addWidget(QLabel("Estimated Budget ($):"))
@@ -97,11 +103,12 @@ class TourTravellerApp(QWidget):
             
             destination = self.destination_type.currentText()
             itinerary = self.itinerary_options.currentText()
+            days = self.days_spinbox.value()
             if destination == "None" or itinerary == "None":
                 QMessageBox.critical(self, "Error", "Please select a destination and itinerary.")
                 return
 
-            prompt = f"Generate a travel itinerary for a trip to {itinerary} in {destination}."
+            prompt = f"Generate a travel itinerary for a {days}-day trip to {itinerary} in {destination}."
             url = "https://api.openai.com/v1/chat/completions"
             headers = {
                 "Content-Type": "application/json",
@@ -110,7 +117,7 @@ class TourTravellerApp(QWidget):
             data = {
                 "model": "gpt-4",
                 "messages": [{"role": "user", "content": prompt}],
-                "max_tokens": 100
+                "max_tokens": 2000
             }
             response = requests.post(url, headers=headers, json=data)
             if response.status_code == 200:
@@ -129,7 +136,3 @@ if __name__ == "__main__":
     window = TourTravellerApp()
     window.show()
     sys.exit(app.exec_())
-
-#command prompt i/p:
-#export OPENAI_API_KEY=" provide key"
-#python sample.py
