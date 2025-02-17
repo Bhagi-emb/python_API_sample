@@ -1,13 +1,16 @@
 #FOR ANY PROJECT WHICH WE ARE DEALING GEN AI(CHATGPT,OPENAI,..) 
 #These are basic step need to follow 
+----------------
  Documentation:
-
+----------------
   1) Problem Statement:
   2) Key insights:
   3) User Persona:
   4) MVP (Basic features):
   5) PRD:
+----------------------
 For Travel agency API:
+----------------------
 1)Key Insights:
   Users want convenience: They prefer a single platform that offers end-to-end travel services, including flights, hotels, local transportation, and activities.
   Price sensitivity: Many users compare costs across multiple platforms and expect competitive pricing.
@@ -25,3 +28,15 @@ For Travel agency API:
   User Reviews & Ratings – Verified traveler feedback on hotels, airlines, and attractions.
   Secure Payment Gateway – Multiple payment options with currency conversion.
   Local Transport & Activities – Car rentals, guided tours, and local experiences.
+-----------
+Commands:
+-----------
+  sudo apt-get update
+  sudo apt-get install python3-pip
+  pip install PyQt5
+  sudo apt-get update
+  sudo apt-get install python3-pyqt5
+  pip install --no-cache-dir PyQt5
+  python3 travel_app1.py
+  export OPENAI_API_KEY="sk-svcacct-og7zRnK94lhckFXM2tOCR_aoKGsUaXGqxW7tSoSgkUlL4gih3IUDC0yPNQHuYPbT3BlbkFJfR4i91plv_jGOAR8d84H_fMImOyVz7TZ7KSz9q6lWPETTCZK1yjiZBdAh1Y9X1wA"
+  python3 sample.py
