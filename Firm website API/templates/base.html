@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Accounting Firm</title>
+    <style>
+        body { font-family: Arial; margin: 0; padding: 0; }
+        nav { background: #004080; padding: 10px; color: white; }
+        nav a { color: white; margin-right: 15px; text-decoration: none; }
+        footer { text-align: center; margin-top: 20px; padding: 10px; background: #eee; }
+        .container { padding: 20px; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/services">Services</a>
+        <a href="/contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+
+    <footer>
+        &copy; 2025 Accounting Firm. All rights reserved.
+    </footer>
+</body>
+</html>
